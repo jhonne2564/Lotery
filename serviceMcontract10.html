@@ -1,0 +1,1336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns:wsr="http://www.openuri.org/2002/10/soap/reliability/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12enc="http://www.w3.org/2003/05/soap-encoding" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ws.mcontractfacade.ldata.limsp.latinia.com" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:conv="http://www.openuri.org/2002/04/wsdl/conversation/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://ws.mcontractfacade.ldata.limsp.latinia.com">
+ <message name="authUser">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+ </message>
+ <message name="authUserResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:boolean">
+  </part>
+ </message>
+ <message name="deleteContract">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+ </message>
+ <message name="deleteContractResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:boolean">
+  </part>
+ </message>
+ <message name="maxContractsReached">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+ </message>
+ <message name="maxContractsReachedResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:boolean">
+  </part>
+ </message>
+ <message name="ping">
+ </message>
+ <message name="pingResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:boolean">
+  </part>
+ </message>
+ <message name="createContract">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string1" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string2" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string3" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string4" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string5" type="partns:string">
+  </part>
+ </message>
+ <message name="createContractResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="getContract">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+ </message>
+ <message name="getContractResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="getContractById">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+ </message>
+ <message name="getContractByIdResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="getContractPropertyValue">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string1" type="partns:string">
+  </part>
+ </message>
+ <message name="getContractPropertyValueResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="getEnterprise">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+ </message>
+ <message name="getEnterpriseResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="getProduct">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+ </message>
+ <message name="getProductResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="getUser">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+ </message>
+ <message name="getUserResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="getUserContractPropertyValue">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string1" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string2" type="partns:string">
+  </part>
+ </message>
+ <message name="getUserContractPropertyValueResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="getUserProperties">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+ </message>
+ <message name="getUserPropertiesResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="listAuthGroupContracts">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string1" type="partns:string">
+  </part>
+ </message>
+ <message name="listAuthGroupContractsResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="listClausesByContract">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="longVal" type="partns:long">
+  </part>
+ </message>
+ <message name="listClausesByContractResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="listClausesByUser">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="longVal" type="partns:long">
+  </part>
+ </message>
+ <message name="listClausesByUserResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="listContractProductPlatformPropertyValues">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string1" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string2" type="partns:string">
+  </part>
+ </message>
+ <message name="listContractProductPlatformPropertyValuesResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="listContractProductProperties">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+ </message>
+ <message name="listContractProductPropertiesResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="listContractProperties">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+ </message>
+ <message name="listContractPropertiesResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="listContractUsers">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string1" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string2" type="partns:string">
+  </part>
+ </message>
+ <message name="listContractUsersResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="listContracts">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="longVal" type="partns:long">
+  </part>
+ </message>
+ <message name="listContractsResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="listEnterpriseContracts">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+ </message>
+ <message name="listEnterpriseContractsResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="listExpiredEnterpriseContracts">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+ </message>
+ <message name="listExpiredEnterpriseContractsResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="listFavoriteContracts">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="longVal" type="partns:long">
+  </part>
+ </message>
+ <message name="listFavoriteContractsResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="listFormats">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+ </message>
+ <message name="listFormatsResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="listGroupContracts">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+ </message>
+ <message name="listGroupContractsResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="listLanguages">
+ </message>
+ <message name="listLanguagesResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="listSessionData">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+ </message>
+ <message name="listSessionDataResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="listSkinProperties">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+ </message>
+ <message name="listSkinPropertiesResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="listUserContracts">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string1" type="partns:string">
+  </part>
+ </message>
+ <message name="listUserContractsResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="listUserGroups">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+ </message>
+ <message name="listUserGroupsResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="listUsers">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+ </message>
+ <message name="listUsersResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string">
+  </part>
+ </message>
+ <message name="getLastLogin">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+ </message>
+ <message name="getLastLoginResponse">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:long">
+  </part>
+ </message>
+ <message name="addFavorite">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+ </message>
+ <message name="addFavoriteResponse">
+ </message>
+ <message name="bindGroup">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string1" type="partns:string">
+  </part>
+ </message>
+ <message name="bindGroupResponse">
+ </message>
+ <message name="bindUser">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string1" type="partns:string">
+  </part>
+ </message>
+ <message name="bindUserResponse">
+ </message>
+ <message name="delContractProperty">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string1" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string2" type="partns:string">
+  </part>
+ </message>
+ <message name="delContractPropertyResponse">
+ </message>
+ <message name="expireContract">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+ </message>
+ <message name="expireContractResponse">
+ </message>
+ <message name="refreshLimspData">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+ </message>
+ <message name="refreshLimspDataResponse">
+ </message>
+ <message name="registerSessionData">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string1" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string2" type="partns:string">
+  </part>
+ </message>
+ <message name="registerSessionDataResponse">
+ </message>
+ <message name="removeFavorite">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+ </message>
+ <message name="removeFavoriteResponse">
+ </message>
+ <message name="reorderGroupContractList">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string1" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string2" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string3" type="partns:string">
+  </part>
+ </message>
+ <message name="reorderGroupContractListResponse">
+ </message>
+ <message name="setContractProperty">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string1" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string2" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string3" type="partns:string">
+  </part>
+ </message>
+ <message name="setContractPropertyResponse">
+ </message>
+ <message name="swapGroupFormatOrder">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string1" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string2" type="partns:string">
+  </part>
+ </message>
+ <message name="swapGroupFormatOrderResponse">
+ </message>
+ <message name="unbindGroup">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string1" type="partns:string">
+  </part>
+ </message>
+ <message name="unbindGroupResponse">
+ </message>
+ <message name="unbindUser">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string1" type="partns:string">
+  </part>
+ </message>
+ <message name="unbindUserResponse">
+ </message>
+ <message name="unregisterSessionData">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+ </message>
+ <message name="unregisterSessionDataResponse">
+ </message>
+ <message name="updateContract">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string1" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string2" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string3" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string4" type="partns:string">
+  </part>
+ </message>
+ <message name="updateContractResponse">
+ </message>
+ <message name="updateContractDates">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string1" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string2" type="partns:string">
+  </part>
+ </message>
+ <message name="updateContractDatesResponse">
+ </message>
+ <message name="updateContractDescription">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string1" type="partns:string">
+  </part>
+ </message>
+ <message name="updateContractDescriptionResponse">
+ </message>
+ <message name="updateContractRef">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string1" type="partns:string">
+  </part>
+ </message>
+ <message name="updateContractRefResponse">
+ </message>
+ <message name="updateLastLogin">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+ </message>
+ <message name="updateLastLoginResponse">
+ </message>
+ <message name="updateSessionData">
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string" type="partns:string">
+  </part>
+  <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="string0" type="partns:string">
+  </part>
+ </message>
+ <message name="updateSessionDataResponse">
+ </message>
+ <portType name="ws_ld_mcontractPort">
+  <operation name="authUser">
+   <input message="tns:authUser">
+   </input>
+   <output message="tns:authUserResponse">
+   </output>
+  </operation>
+  <operation name="deleteContract">
+   <input message="tns:deleteContract">
+   </input>
+   <output message="tns:deleteContractResponse">
+   </output>
+  </operation>
+  <operation name="maxContractsReached">
+   <input message="tns:maxContractsReached">
+   </input>
+   <output message="tns:maxContractsReachedResponse">
+   </output>
+  </operation>
+  <operation name="ping">
+   <input message="tns:ping">
+   </input>
+   <output message="tns:pingResponse">
+   </output>
+  </operation>
+  <operation name="createContract">
+   <input message="tns:createContract">
+   </input>
+   <output message="tns:createContractResponse">
+   </output>
+  </operation>
+  <operation name="getContract">
+   <input message="tns:getContract">
+   </input>
+   <output message="tns:getContractResponse">
+   </output>
+  </operation>
+  <operation name="getContractById">
+   <input message="tns:getContractById">
+   </input>
+   <output message="tns:getContractByIdResponse">
+   </output>
+  </operation>
+  <operation name="getContractPropertyValue">
+   <input message="tns:getContractPropertyValue">
+   </input>
+   <output message="tns:getContractPropertyValueResponse">
+   </output>
+  </operation>
+  <operation name="getEnterprise">
+   <input message="tns:getEnterprise">
+   </input>
+   <output message="tns:getEnterpriseResponse">
+   </output>
+  </operation>
+  <operation name="getProduct">
+   <input message="tns:getProduct">
+   </input>
+   <output message="tns:getProductResponse">
+   </output>
+  </operation>
+  <operation name="getUser">
+   <input message="tns:getUser">
+   </input>
+   <output message="tns:getUserResponse">
+   </output>
+  </operation>
+  <operation name="getUserContractPropertyValue">
+   <input message="tns:getUserContractPropertyValue">
+   </input>
+   <output message="tns:getUserContractPropertyValueResponse">
+   </output>
+  </operation>
+  <operation name="getUserProperties">
+   <input message="tns:getUserProperties">
+   </input>
+   <output message="tns:getUserPropertiesResponse">
+   </output>
+  </operation>
+  <operation name="listAuthGroupContracts">
+   <input message="tns:listAuthGroupContracts">
+   </input>
+   <output message="tns:listAuthGroupContractsResponse">
+   </output>
+  </operation>
+  <operation name="listClausesByContract">
+   <input message="tns:listClausesByContract">
+   </input>
+   <output message="tns:listClausesByContractResponse">
+   </output>
+  </operation>
+  <operation name="listClausesByUser">
+   <input message="tns:listClausesByUser">
+   </input>
+   <output message="tns:listClausesByUserResponse">
+   </output>
+  </operation>
+  <operation name="listContractProductPlatformPropertyValues">
+   <input message="tns:listContractProductPlatformPropertyValues">
+   </input>
+   <output message="tns:listContractProductPlatformPropertyValuesResponse">
+   </output>
+  </operation>
+  <operation name="listContractProductProperties">
+   <input message="tns:listContractProductProperties">
+   </input>
+   <output message="tns:listContractProductPropertiesResponse">
+   </output>
+  </operation>
+  <operation name="listContractProperties">
+   <input message="tns:listContractProperties">
+   </input>
+   <output message="tns:listContractPropertiesResponse">
+   </output>
+  </operation>
+  <operation name="listContractUsers">
+   <input message="tns:listContractUsers">
+   </input>
+   <output message="tns:listContractUsersResponse">
+   </output>
+  </operation>
+  <operation name="listContracts">
+   <input message="tns:listContracts">
+   </input>
+   <output message="tns:listContractsResponse">
+   </output>
+  </operation>
+  <operation name="listEnterpriseContracts">
+   <input message="tns:listEnterpriseContracts">
+   </input>
+   <output message="tns:listEnterpriseContractsResponse">
+   </output>
+  </operation>
+  <operation name="listExpiredEnterpriseContracts">
+   <input message="tns:listExpiredEnterpriseContracts">
+   </input>
+   <output message="tns:listExpiredEnterpriseContractsResponse">
+   </output>
+  </operation>
+  <operation name="listFavoriteContracts">
+   <input message="tns:listFavoriteContracts">
+   </input>
+   <output message="tns:listFavoriteContractsResponse">
+   </output>
+  </operation>
+  <operation name="listFormats">
+   <input message="tns:listFormats">
+   </input>
+   <output message="tns:listFormatsResponse">
+   </output>
+  </operation>
+  <operation name="listGroupContracts">
+   <input message="tns:listGroupContracts">
+   </input>
+   <output message="tns:listGroupContractsResponse">
+   </output>
+  </operation>
+  <operation name="listLanguages">
+   <input message="tns:listLanguages">
+   </input>
+   <output message="tns:listLanguagesResponse">
+   </output>
+  </operation>
+  <operation name="listSessionData">
+   <input message="tns:listSessionData">
+   </input>
+   <output message="tns:listSessionDataResponse">
+   </output>
+  </operation>
+  <operation name="listSkinProperties">
+   <input message="tns:listSkinProperties">
+   </input>
+   <output message="tns:listSkinPropertiesResponse">
+   </output>
+  </operation>
+  <operation name="listUserContracts">
+   <input message="tns:listUserContracts">
+   </input>
+   <output message="tns:listUserContractsResponse">
+   </output>
+  </operation>
+  <operation name="listUserGroups">
+   <input message="tns:listUserGroups">
+   </input>
+   <output message="tns:listUserGroupsResponse">
+   </output>
+  </operation>
+  <operation name="listUsers">
+   <input message="tns:listUsers">
+   </input>
+   <output message="tns:listUsersResponse">
+   </output>
+  </operation>
+  <operation name="getLastLogin">
+   <input message="tns:getLastLogin">
+   </input>
+   <output message="tns:getLastLoginResponse">
+   </output>
+  </operation>
+  <operation name="addFavorite">
+   <input message="tns:addFavorite">
+   </input>
+   <output message="tns:addFavoriteResponse">
+   </output>
+  </operation>
+  <operation name="bindGroup">
+   <input message="tns:bindGroup">
+   </input>
+   <output message="tns:bindGroupResponse">
+   </output>
+  </operation>
+  <operation name="bindUser">
+   <input message="tns:bindUser">
+   </input>
+   <output message="tns:bindUserResponse">
+   </output>
+  </operation>
+  <operation name="delContractProperty">
+   <input message="tns:delContractProperty">
+   </input>
+   <output message="tns:delContractPropertyResponse">
+   </output>
+  </operation>
+  <operation name="expireContract">
+   <input message="tns:expireContract">
+   </input>
+   <output message="tns:expireContractResponse">
+   </output>
+  </operation>
+  <operation name="refreshLimspData">
+   <input message="tns:refreshLimspData">
+   </input>
+   <output message="tns:refreshLimspDataResponse">
+   </output>
+  </operation>
+  <operation name="registerSessionData">
+   <input message="tns:registerSessionData">
+   </input>
+   <output message="tns:registerSessionDataResponse">
+   </output>
+  </operation>
+  <operation name="removeFavorite">
+   <input message="tns:removeFavorite">
+   </input>
+   <output message="tns:removeFavoriteResponse">
+   </output>
+  </operation>
+  <operation name="reorderGroupContractList">
+   <input message="tns:reorderGroupContractList">
+   </input>
+   <output message="tns:reorderGroupContractListResponse">
+   </output>
+  </operation>
+  <operation name="setContractProperty">
+   <input message="tns:setContractProperty">
+   </input>
+   <output message="tns:setContractPropertyResponse">
+   </output>
+  </operation>
+  <operation name="swapGroupFormatOrder">
+   <input message="tns:swapGroupFormatOrder">
+   </input>
+   <output message="tns:swapGroupFormatOrderResponse">
+   </output>
+  </operation>
+  <operation name="unbindGroup">
+   <input message="tns:unbindGroup">
+   </input>
+   <output message="tns:unbindGroupResponse">
+   </output>
+  </operation>
+  <operation name="unbindUser">
+   <input message="tns:unbindUser">
+   </input>
+   <output message="tns:unbindUserResponse">
+   </output>
+  </operation>
+  <operation name="unregisterSessionData">
+   <input message="tns:unregisterSessionData">
+   </input>
+   <output message="tns:unregisterSessionDataResponse">
+   </output>
+  </operation>
+  <operation name="updateContract">
+   <input message="tns:updateContract">
+   </input>
+   <output message="tns:updateContractResponse">
+   </output>
+  </operation>
+  <operation name="updateContractDates">
+   <input message="tns:updateContractDates">
+   </input>
+   <output message="tns:updateContractDatesResponse">
+   </output>
+  </operation>
+  <operation name="updateContractDescription">
+   <input message="tns:updateContractDescription">
+   </input>
+   <output message="tns:updateContractDescriptionResponse">
+   </output>
+  </operation>
+  <operation name="updateContractRef">
+   <input message="tns:updateContractRef">
+   </input>
+   <output message="tns:updateContractRefResponse">
+   </output>
+  </operation>
+  <operation name="updateLastLogin">
+   <input message="tns:updateLastLogin">
+   </input>
+   <output message="tns:updateLastLoginResponse">
+   </output>
+  </operation>
+  <operation name="updateSessionData">
+   <input message="tns:updateSessionData">
+   </input>
+   <output message="tns:updateSessionDataResponse">
+   </output>
+  </operation>
+ </portType>
+ <binding name="ws_ld_mcontractPort" type="tns:ws_ld_mcontractPort">
+   <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+  <operation name="authUser">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="deleteContract">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="maxContractsReached">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="ping">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="createContract">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="getContract">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="getContractById">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="getContractPropertyValue">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="getEnterprise">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="getProduct">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="getUser">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="getUserContractPropertyValue">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="getUserProperties">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="listAuthGroupContracts">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="listClausesByContract">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="listClausesByUser">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="listContractProductPlatformPropertyValues">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="listContractProductProperties">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="listContractProperties">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="listContractUsers">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="listContracts">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="listEnterpriseContracts">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="listExpiredEnterpriseContracts">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="listFavoriteContracts">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="listFormats">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="listGroupContracts">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="listLanguages">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="listSessionData">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="listSkinProperties">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="listUserContracts">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="listUserGroups">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="listUsers">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="getLastLogin">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="addFavorite">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="bindGroup">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="bindUser">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="delContractProperty">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="expireContract">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="refreshLimspData">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="registerSessionData">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="removeFavorite">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="reorderGroupContractList">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="setContractProperty">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="swapGroupFormatOrder">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="unbindGroup">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="unbindUser">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="unregisterSessionData">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="updateContract">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="updateContractDates">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="updateContractDescription">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="updateContractRef">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="updateLastLogin">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+  <operation name="updateSessionData">
+    <soap:operation style="rpc" soapAction=""/>
+   <input>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </input>
+   <output>
+     <soap:body use="encoded" namespace="http://ws.mcontractfacade.ldata.limsp.latinia.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+   </output>
+  </operation>
+ </binding>
+ <service name="ws_ld_mcontract">
+  <port name="ws_ld_mcontractPort" binding="tns:ws_ld_mcontractPort">
+    <soap:address location="http://vm101.corp.latiniaservices.com:7001/limsp/ws-ld-mcontract/service"/>
+  </port>
+ </service>
+</definitions>
