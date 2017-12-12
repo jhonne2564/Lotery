@@ -93,16 +93,22 @@ public class Loteria implements ActionListener {
 	}
 
 	public static void main(String[] args) {
-
+		
+		if(args.length==2){
+			new Loteria().processFromTo(args[0]+"-"+args[1]);
+		}else if(args.length==1){
+			new Loteria().saveFile(args[0]);
+		}else
+		System.out.println("uso: \n For to process from : 4487 ?\nOne only parameter save to file");
 		// Loteria l=new Loteria();
 		// l.loadInterface();
-		new Loteria().processFromTo("4487-4519");
+		
 
 		// for (int i = 4487; i < 4519; i++) {
 		// new Loteria().saveFile(String.valueOf(i));
 		// }
 
-		// new Loteria().saveFile("4519");
+		// 
 	}
 
 	List<String> numeroslista = null;
@@ -155,7 +161,7 @@ public class Loteria implements ActionListener {
 				// Creamos el Buffer de Lectura
 				BufferedReader buffer = new BufferedReader(
 						new InputStreamReader(entrada));
-				String strLinea;
+				String strLinea;boolean isFirst=true;
 				// Leer el archivo linea por linea
 				while ((strLinea = buffer.readLine()) != null) {
 					// Imprimimos la l�nea por pantalla
@@ -182,7 +188,11 @@ public class Loteria implements ActionListener {
 							int ps1 = Integer.parseInt("" + serie.charAt(0));
 							int ps2 = Integer.parseInt("" + serie.charAt(1));
 							int ps3 = Integer.parseInt("" + serie.charAt(2));
-
+							
+							if(isFirst){
+								System.out.println("Premio Mayor:"+p1+p2+p3+p4+" "+ps1+ps2+ps3);
+								isFirst=false;
+							}
 							
 							posicion1[p1]++;
 							posicion2[p2]++;
@@ -194,7 +204,7 @@ public class Loteria implements ActionListener {
 							posicionserie3[ps3]++;
 							// System.out.println(premioMayor);
 							// System.out.println(serie);
-
+							break;
 						}
 					}
 				}
@@ -203,11 +213,48 @@ public class Loteria implements ActionListener {
 				e.printStackTrace();
 			}
 		}
-
+		int mayor1=posicion1[0];
+		int index1=0;
+		int mayor2=posicion2[0];
+		int index2=0;
+		int mayor3=posicion3[0];
+		int index3=0;
+		int mayor4=posicion4[0];
+		int index4=0;
+		int mayor5=posicionserie1[0];
+		int index5=0;
+		int mayor6=posicionserie2[0];
+		int index6=0;
+		int mayor7=posicionserie3[0];
+		int index7=0;
+		
 		System.out.println("Primera posición");
 		String sp1 = "1era posición", sp2 = "2da posicion", sp3 = "3ra posicion ", sp4 = "4ta posicion", sp5 = "Primera posicion serie", sp6 = "2da posicion serie", sp7 = "3era posicion serie";
 		for (int j = 0; j < posicion1.length; j++) {
-
+			
+			if(posicion1[j]>mayor1){
+				index1=j;
+				mayor1=posicion1[j];
+			} if(posicion2[j]>mayor2){
+				index2=j;
+				mayor2=posicion2[j];
+			} if(posicion3[j]>mayor3){
+				index3=j;
+				mayor3=posicion3[j];
+			} if(posicion4[j]>mayor4){
+				index4=j;
+				mayor4=posicion4[j];
+			} if(posicionserie1[j]>mayor5){
+				index5=j;
+				mayor5=posicionserie1[j];
+			} if(posicionserie2[j]>mayor6){
+				index6=j;
+				mayor6=posicionserie2[j];
+			} if(posicionserie3[j]>mayor7){
+				index7=j;
+				mayor7=posicionserie3[j];
+			}
+		
 			sp1 += "\n" + posicion1[j] + " veces Aparece:" + j;
 			sp2 += "\n" + posicion2[j] + " veces Aparece:" + j;
 			sp3 += "\n" + posicion3[j] + " veces Aparece:" + j;
@@ -231,7 +278,14 @@ public class Loteria implements ActionListener {
 		System.out.println(sp6);
 		System.out.println();
 		System.out.println(sp7);
-
+		
+		System.out.println("The mayor in the index 1 is:"+index1+" with value: "+mayor1);
+		System.out.println("The mayor in the index 2 is:"+index2+" with value: "+mayor2);
+		System.out.println("The mayor in the index 3 is:"+index3+" with value: "+mayor3);
+		System.out.println("The mayor in the index 4 is:"+index4+" with value: "+mayor4);
+		System.out.println("The mayor in the index serie 1 is:"+index5+" with value: "+mayor5);
+		System.out.println("The mayor in the index serie 2 is:"+index6+" with value: "+mayor6);
+		System.out.println("The mayor in the index serie 3 is:"+index7+" with value: "+mayor7);
 	}
 
 	private void saveFile(String sorteo) {
