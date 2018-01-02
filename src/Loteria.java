@@ -95,11 +95,17 @@ public class Loteria implements ActionListener {
 	public static void main(String[] args) {
 		
 		if(args.length==2){
-			new Loteria().processFromTo(args[0]+"-"+args[1]);
-		}else if(args.length==1){
+			new Loteria().processFromTo(args[0]+"-"+args[1],false);
+		}else if(args.length==3){
+			if(args[0].trim().equalsIgnoreCase("mayor")){
+				new Loteria().processFromTo(args[1]+"-"+args[2],true);
+			}
+		}		
+		else if(args.length==1){
 			new Loteria().saveFile(args[0]);
 		}else
 		System.out.println("uso: \n For to process from : 4487 ?\nOne only parameter save to file");
+		System.out.println("For to see only numbers of mayor: mayor 4487 ?");
 		// Loteria l=new Loteria();
 		// l.loadInterface();
 		
@@ -135,7 +141,7 @@ public class Loteria implements ActionListener {
 	private FileOutputStream fos;
 	private DataInputStream entrada;
 
-	private void processFromTo(String sorteo) {
+	private void processFromTo(String sorteo, boolean mayor) {
 
 		int posicion1[] = new int[10];
 		int posicion2[] = new int[10];
@@ -189,7 +195,7 @@ public class Loteria implements ActionListener {
 							int ps2 = Integer.parseInt("" + serie.charAt(1));
 							int ps3 = Integer.parseInt("" + serie.charAt(2));
 							
-							if(isFirst){
+							if(isFirst&&mayor){
 								System.out.println("Premio Mayor:"+p1+p2+p3+p4+" "+ps1+ps2+ps3);
 								isFirst=false;
 							}
@@ -204,7 +210,7 @@ public class Loteria implements ActionListener {
 							posicionserie3[ps3]++;
 							// System.out.println(premioMayor);
 							// System.out.println(serie);
-							break;
+							if(mayor)break;
 						}
 					}
 				}
