@@ -94,6 +94,10 @@ public class Loteria implements ActionListener {
 
 	public static void main(String[] args) {
 		
+		for (String string : args) {
+			System.out.println(string);
+		}
+		
 		if(args.length==2){
 			new Loteria().processFromTo(args[0]+"-"+args[1],false);
 		}else if(args.length==3){
@@ -103,9 +107,10 @@ public class Loteria implements ActionListener {
 		}		
 		else if(args.length==1){
 			new Loteria().saveFile(args[0]);
-		}else
+		}else{
 		System.out.println("uso: \n For to process from : 4487 ?\nOne only parameter save to file");
 		System.out.println("For to see only numbers of mayor: mayor 4487 ?");
+		}
 		// Loteria l=new Loteria();
 		// l.loadInterface();
 		

@@ -1,1 +1,1 @@
-java -cp lotery.jar Loteria $1 $2
+java -cp lotery.jar Loteria $1 $2 $3
