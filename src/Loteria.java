@@ -41,7 +41,12 @@ public class Loteria   {
 			}
 		}		
 		else if(args.length==1){
-			new Loteria().saveFile(args[0]);
+			if(args[0].trim().charAt(0)=='n'){
+				
+			}
+			else {
+				new Loteria().saveFile(args[0]);
+			}
 		}else{
 		System.out.println("uso: \n For to process from : 4487 ?\nOne only parameter save to file");
 		System.out.println("For to see only numbers of mayor: mayor 4487 ?");
