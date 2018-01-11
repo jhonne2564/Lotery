@@ -13,84 +13,19 @@ import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JList;
-import javax.swing.JOptionPane;
-import javax.swing.JScrollPane;
-import javax.swing.JTextField;
-import javax.swing.WindowConstants;
-import javax.swing.table.DefaultTableModel;
+
 
 import archivo.Archivo;
 
-public class Loteria implements ActionListener {
+public class Loteria   {
 
 	/**
 	 * @param args
 	 */
 	int numeros[];
-	JButton btnSaveFile, botonPasar, botonEliminar;
-	JTextField campo;
-	JList list1;
-	JList list;
+
 	String archivo = "Loteria.dat";
-
-	public void loadInterface() {
-
-		JFrame v12 = new JFrame("Lottery");
-		v12.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		btnSaveFile = new JButton("Save File");
-		btnSaveFile.addActionListener(this);
-		btnSaveFile.setBounds(200, 10, 100, 20);
-		v12.getContentPane().add(btnSaveFile);
-
-		botonPasar = new JButton("<<<");
-		botonPasar.addActionListener(this);
-		botonPasar.setBounds(110, 60, 80, 20);
-		v12.getContentPane().add(botonPasar);
-
-		campo = new JTextField();
-		campo.setBounds(310, 10, 100, 20);
-		v12.getContentPane().add(campo);
-
-		list1 = new JList();
-		JScrollPane scroll2 = new JScrollPane(list1);
-		scroll2.setBounds(200, 40, 100, 300);
-
-		DefaultTableModel tablemodel, tablemodel2;
-		list = new JList();
-		JScrollPane scroll = new JScrollPane(list);
-		scroll.setBounds(10, 10, 100, 300);
-
-		numeros = null;
-		try {
-			numeros = (int[]) Archivo.cargar(archivo);
-		} catch (Exception e) {
-			System.out.println("Error cargando el archivo " + archivo);
-			numeros = new int[1000];
-
-		}
-		if (numeros == null) {
-			numeros = new int[1000];
-		}
-
-		// while (true) {
-		// String entrada = JOptionPane.showInputDialog("Numero");
-		// if (entrada.equals(""))
-		// break;
-		// numeros[Integer.parseInt(entrada)]++;
-		// }
-		v12.getContentPane().add(scroll);
-		v12.getContentPane().add(scroll2);
-		v12.setSize(500, 500);
-		v12.setLayout(null);
-		// v12.pack();
-		v12.setLocationRelativeTo(null);
-		v12.setVisible(true);
-		v12.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-
-	}
+	
 
 	public static void main(String[] args) {
 		
@@ -124,23 +59,7 @@ public class Loteria implements ActionListener {
 
 	List<String> numeroslista = null;
 
-	@Override
-	public void actionPerformed(ActionEvent arg0) {
-
-		if (arg0.getSource() == btnSaveFile) {
-			String sCampo = campo.getText();
-			if (sCampo.contains("-")) {
-
-			} else {
-				saveFile(sCampo.trim());
-			}
-		}
-
-		else {
-
-		}
-
-	}
+	
 
 	private InputStream inputS;
 	private FileOutputStream fos;
