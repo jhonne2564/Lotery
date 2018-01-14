@@ -38,25 +38,25 @@ public class Loteria   {
 		new Loteria().showLoteryNumbersbyOrder("4527-4527");
 		
 		
-//		if(args.length==2){
-//			new Loteria().processFromTo(args[0]+"-"+args[1],false);
-//		}else if(args.length==3){
-//			if(args[0].trim().equalsIgnoreCase("mayor")){
-//				new Loteria().processFromTo(args[1]+"-"+args[2],true);
-//			}
-//		}		
-//		else if(args.length==1){
-//
-//			if(args[0].trim().charAt(0)=='n'){
-//				System.out.println("numbers");
-//			}
-//			else {
-//				new Loteria().saveFile(args[0]);
-//			}
-//		}else{
-//		System.out.println("uso: \n For to process from : 4487 ?\nOne only parameter save to file");
-//		System.out.println("For to see only numbers of mayor: mayor 4487 ?");
-//		}
+		if(args.length==2){
+			new Loteria().processFromTo(args[0]+"-"+args[1],false);
+		}else if(args.length==3){
+			if(args[0].trim().equalsIgnoreCase("mayor")){
+				new Loteria().processFromTo(args[1]+"-"+args[2],true);
+			}
+		}		
+		else if(args.length==1){
+
+			if(args[0].trim().charAt(0)=='n'){
+				System.out.println("numbers");
+			}
+			else {
+				new Loteria().saveFile(args[0]);
+			}
+		}else{
+		System.out.println("uso: \n For to process from : 4487 ?\nOne only parameter save to file");
+		System.out.println("For to see only numbers of mayor: mayor 4487 ?");
+		}
 		 
 	}
 	
