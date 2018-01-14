@@ -39,7 +39,7 @@ public class Loteria   {
 		else if(args.length==1){
 
 			if(args[0].trim().charAt(0)=='n'){
-				System.out.println("numbers");
+				System.out.println("lotery numbers by order ");
 			}
 			else {
 				new Loteria().saveFile(args[0]);
