@@ -27,11 +27,7 @@ public class Loteria   {
 	String archivo = "Loteria.dat";
 	
 
-	public static void main(String[] args) {
-		
-		for (String string : args) {
-			System.out.println(string);
-		}
+	public static void main(String[] args) {			
 		
 		if(args.length==2){
 			new Loteria().processFromTo(args[0]+"-"+args[1],false);
@@ -41,8 +37,9 @@ public class Loteria   {
 			}
 		}		
 		else if(args.length==1){
+
 			if(args[0].trim().charAt(0)=='n'){
-				
+				System.out.println("numbers");
 			}
 			else {
 				new Loteria().saveFile(args[0]);
