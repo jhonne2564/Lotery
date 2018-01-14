@@ -11,7 +11,11 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
+
+
 
 
 
@@ -27,36 +31,96 @@ public class Loteria   {
 	String archivo = "Loteria.dat";
 	
 
-	public static void main(String[] args) {			
+	public static void main(String[] args) {	
 		
-		if(args.length==2){
-			new Loteria().processFromTo(args[0]+"-"+args[1],false);
-		}else if(args.length==3){
-			if(args[0].trim().equalsIgnoreCase("mayor")){
-				new Loteria().processFromTo(args[1]+"-"+args[2],true);
-			}
-		}		
-		else if(args.length==1){
+		
+		//
+		new Loteria().showLoteryNumbersbyOrder("4527-4527");
+		
+		
+//		if(args.length==2){
+//			new Loteria().processFromTo(args[0]+"-"+args[1],false);
+//		}else if(args.length==3){
+//			if(args[0].trim().equalsIgnoreCase("mayor")){
+//				new Loteria().processFromTo(args[1]+"-"+args[2],true);
+//			}
+//		}		
+//		else if(args.length==1){
+//
+//			if(args[0].trim().charAt(0)=='n'){
+//				System.out.println("numbers");
+//			}
+//			else {
+//				new Loteria().saveFile(args[0]);
+//			}
+//		}else{
+//		System.out.println("uso: \n For to process from : 4487 ?\nOne only parameter save to file");
+//		System.out.println("For to see only numbers of mayor: mayor 4487 ?");
+//		}
+		 
+	}
+	
+	public void showLoteryNumbersbyOrder(String sorteo){
 
-			if(args[0].trim().charAt(0)=='n'){
-				System.out.println("numbers");
+		
+		List<String> numeros = new ArrayList<>();
+		List<String> series = new ArrayList<>();
+		String serieFromTo[] = sorteo.split("-");
+		String serie = null;
+		for (int i = Integer.parseInt(serieFromTo[0].trim()); i <= Integer
+				.parseInt(serieFromTo[1].trim()); i++) {
+			FileInputStream fstream;
+			try {
+
+				fstream = new FileInputStream("pages/" + i + "file.html");
+
+				// Creamos el objeto de entrada
+				entrada = new DataInputStream(fstream);
+				// Creamos el Buffer de Lectura
+				BufferedReader buffer = new BufferedReader(
+						new InputStreamReader(entrada));
+				String strLinea;boolean isFirst=true;
+				// Leer el archivo linea por linea
+				while ((strLinea = buffer.readLine()) != null) {
+					// Imprimimos la l�nea por pantalla
+					if (strLinea.contains("class=\"Res_ResultSeco\"")) {
+						String premioMayor = strLinea.trim();
+						strLinea = buffer.readLine();
+						if (strLinea.contains("class=\"Res_ResultSeco\"")) {
+							premioMayor = premioMayor.substring(64, 68);
+							premioMayor = premioMayor.trim();
+
+							strLinea = strLinea.trim();
+							serie = strLinea.substring(65, 68);
+							serie = serie.trim();
+							numeros.add(premioMayor);					
+							
+							
+							
+														
+						}
+					}
+				}
+
+			} catch (Exception e) {
+				e.printStackTrace();
 			}
-			else {
-				new Loteria().saveFile(args[0]);
-			}
-		}else{
-		System.out.println("uso: \n For to process from : 4487 ?\nOne only parameter save to file");
-		System.out.println("For to see only numbers of mayor: mayor 4487 ?");
 		}
-		// Loteria l=new Loteria();
-		// l.loadInterface();
 		
-
-		// for (int i = 4487; i < 4519; i++) {
-		// new Loteria().saveFile(String.valueOf(i));
-		// }
-
-		// 
+		Collections.sort(numeros);
+		int i=0;
+		for (String string : numeros) {
+			i++;
+			System.out.print(string+"  ");
+			if(i==5){
+				i=0;
+				System.out.println();
+			}
+				
+		}
+		
+		
+		
 	}
 
 	List<String> numeroslista = null;
