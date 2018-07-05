@@ -30,8 +30,14 @@ public class Loteria   {
 
 	String archivo = "Loteria.dat";
 	
-
 	public static void main(String[] args) {	
+		Character a='a';
+		if(a.equals('a'))
+			System.out.println("es a");
+		System.out.println("es o");
+	}
+
+	public static void main1(String[] args) {	
 		
 		
 		//
@@ -310,5 +316,9 @@ public class Loteria   {
 			e.printStackTrace();
 		}
 
+	}
+	
+	public void method1(){
+		// Test
 	}
 }
