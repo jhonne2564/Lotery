@@ -28,7 +28,7 @@ public class Loteria implements ActionListener {
 
 	/**
 	 * @param args
-	 * Comentariosjfñlakjkfñajkf
+	 * Comentarios finales
 	 */
 	int numeros[];
 	JButton btnSaveFile, botonPasar, botonEliminar;
@@ -36,7 +36,7 @@ public class Loteria implements ActionListener {
 	JList list1;
 	JList list;
 	String archivo = "Loteria.dat";
-
+// nuevo comentarios
 	public void loadInterface() {
 
 		JFrame v12 = new JFrame("Lottery");
