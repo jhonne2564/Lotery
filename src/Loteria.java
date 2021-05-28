@@ -27,6 +27,8 @@ import archivo.Archivo;
 public class Loteria implements ActionListener {
 
 	/**
+	 * 
+	 * Cambios en mi rama
 	 * @param args
 	 */
 	int numeros[];
