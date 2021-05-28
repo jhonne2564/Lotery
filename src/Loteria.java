@@ -28,6 +28,7 @@ public class Loteria implements ActionListener {
 
 	/**
 	 * @param args
+	 * Comentarios para conflicto
 	 */
 	int numeros[];
 	JButton btnSaveFile, botonPasar, botonEliminar;
